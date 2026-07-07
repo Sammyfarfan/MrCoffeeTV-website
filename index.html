@@ -4,12 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>MrCoffeeTV</title>
+    <style>
+      body {
+        background-color: #0e0e0e;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        padding: 40px;
+      }
+
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 30px;
+      }
+
+      .intro {
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+      }
+
+      @keyframes fadeIn {
+        to { opacity: 1; }
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to MrCoffeeTV</h1>
-    <p>Site coming soon!</p>
+    <img src="profile.jpg" alt="MrCoffeeTV" class="profile-pic"/>
+    <div class="intro">
+      <h1>MrCoffeeTV</h1>
+      <p>Welcome to the official site!</p>
+    </div>
   </body>
-  <li>
-    <img src = "https://static-cdn.jtvnw.net/jtv_user_pictures/c15793f2-d400-4c6b-9aba-d8fb68d582a0-profile_image-70x70.png">
-  </li>
 </html>
